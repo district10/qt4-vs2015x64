@@ -21,10 +21,10 @@ The README.txt inside is written in chinese, steps are:
 # how to build
 
 ```
-git clone https://github.com/district10/qt4-vs2015x64.git
-mkdir qt4-vs2015x64-build
-cd qt4-vs2015x64-build
-..\qt4-vs2015x64\configure.exe -prefix C:\Qt\VS2015x64\qt-4.8.7 -developer-build -opensource -confirm-license -debug-and-release -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-libtiff -no-libmng -no-dbus -no-nis -no-webkit -nomake doc -nomake examples -nomake demos -no-gtkstyle -platform win32-msvc2015
+# download source code at <http://whudoc.qiniudn.com/2016/qt-src-4.8.7-vs2015.tar.bz2> (137 MB)
+mkdir qt-build-4.8.7
+cd qt-build-4.8.7
+..\qt-src-4.8.7\configure.exe -prefix C:\Qt\VS2015x64\qt-4.8.7 -developer-build -opensource -confirm-license -debug-and-release -no-qt3support -no-multimedia -no-audio-backend -no-phonon -no-phonon-backend -no-libtiff -no-libmng -no-dbus -no-nis -no-webkit -nomake doc -nomake examples -nomake demos -no-gtkstyle -platform win32-msvc2015
 nmake
 ```
 
