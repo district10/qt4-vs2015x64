@@ -49,6 +49,13 @@ For details, check out sandym's [qt-patches/windows/qt-4.8.7 at master · sandym
 
 some builds are small, some builds are big.
 
+## how to use these builds
+
+1.  download a build, let's see [`qt-4.8.7-vs2015-build1.7z`](http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z) (zipped 108 MB, unzipped: about 951 MB).
+2.  unzip it to a dir, let's see `c:\vs2015x64`, so the `<build dir>` is `c:\vs2015x64\qt-4.8.7`
+3.  add `<build dir>\bin` to %PATH%
+4.  use cmake to build vs2015 project, then vs2015 to build & run, that's it.
+
 ## build #1
 
 **configure**
