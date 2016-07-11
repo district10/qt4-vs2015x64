@@ -17,7 +17,7 @@ Guide to `vs2015-qt4-playground.zip`                                    | `vs201
 ----------------------------------------------------------------------- | ------------------------------------
 unzip `vs2015-qt4-playground.zip`                                       | 解压 `vs2015-qt4-playground.zip`
 unzip `qt4-vs2015x64.7z`                                                | 解压 `qt4-vs2015x64.7z`
-prepend to %PATH%: `path\to\`vs2015-qt4-playground\qt4-vs2015x64\bin;`  | 把 `path\to\`vs2015-qt4-playground\qt4-vs2015x64\bin;` 目录添加到环境变量 %PATH% 前面
+prepend to %PATH%: `path\to\vs2015-qt4-playground\qt4-vs2015x64\bin;`   | 把 `path\to\vs2015-qt4-playground\qt4-vs2015x64\bin;` 目录添加到环境变量 %PATH% 前面
 use cmake-gui to build vs2015 project                                   | 用 cmake 生成 vs2015 工程
 use vs2015 to open, build (release!), run                               | 用 vs2015 打开、编译（只能编译 release 版本）、运行
 
