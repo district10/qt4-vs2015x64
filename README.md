@@ -26,6 +26,8 @@ The README.txt inside is written in chinese, steps are:
 
 # make a build
 
+1) <kbd>win</kbd>; 2) search "prompt x64"; 3) open "VS2015 x64 Native Tools Command Prompt".
+
 ```
 # download source code at <http://whudoc.qiniudn.com/2016/qt-src-4.8.7-vs2015.7z> (41.5 MB).
 mkdir qt-build-4.8.7
@@ -43,7 +45,7 @@ For details, check out sandym's [qt-patches/windows/qt-4.8.7 at master · sandym
 
 ---
 
-# more builds
+# my builds
 
 some builds are small, some builds are big.
 
@@ -56,3 +58,5 @@ some builds are small, some builds are big.
 ```
 
 **build**
+
+<http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z> (108 MB).
