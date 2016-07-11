@@ -7,22 +7,19 @@ Download modified source that can be build with vs2015: <http://whudoc.qiniudn.c
 This is based on qt official release 4.8.7 (last qt4 release), and patched necessary modifications so that it can be
 successfully compiled by vc14 (vs2015). The patch is offerred by [sandym/qt-patches](https://github.com/sandym/qt-patches).
 
-# build
+# demo build
 
-checkout my demo: **<http://whudoc.qiniudn.com/2016/vs2015-qt4-playground.zip>** (14 MB).
+Download the demo build: <http://whudoc.qiniudn.com/2016/vs2015-qt4-playground.zip> (14 MB).
 
 14 MB = 13.6 MB of qt4 prebuild (release version only, a tiny qt4!) + 1 demo qt project.
 
-# use my build
-
-The README.txt inside is written in chinese, steps are:
-
--   unzip `qt4-vs2015x64.7z` in current dir;
--   open CMD: hold <kbd>Shift</kbd>, right click, then hit <kbd>w</kbd>, <kbd>Enter</kbd>;
--   set environment varible: type in CMD "`set PATH=%CD%\qt4-vs2015x64\bin;%PATH%`";
--   open cmake-gui: type in CMD "`cmake-gui demo`";
--   build vs2015 project: 1) set build dir; 2) set compilation option to `VS2015 WIN64`; 3) configure, build;
--   use vs2015 to open `.sln` file in build dir, build the **release** version (not debug!).
+Guide to `vs2015-qt4-playground.zip`                                    | `vs2015-qt4-playground.zip` 的使用指南
+----------------------------------------------------------------------- | ------------------------------------
+unzip `vs2015-qt4-playground.zip`                                       | 解压 `vs2015-qt4-playground.zip`
+unzip `qt4-vs2015x64.7z`                                                | 解压 `qt4-vs2015x64.7z`
+prepend to %PATH%: `path\to\`vs2015-qt4-playground\qt4-vs2015x64\bin;`  | 把 `path\to\`vs2015-qt4-playground\qt4-vs2015x64\bin;` 目录添加到环境变量 %PATH% 前面
+use cmake-gui to build vs2015 project                                   | 用 cmake 生成 vs2015 工程
+use vs2015 to open, build (release!), run                               | 用 vs2015 打开、编译（只能编译 release 版本）、运行
 
 # make a build
 
@@ -47,14 +44,7 @@ For details, check out sandym's [qt-patches/windows/qt-4.8.7 at master · sandym
 
 # my builds
 
-some builds are small, some builds are big.
-
-## how to use these builds
-
-1.  download a build, let's see [`qt-4.8.7-vs2015-build1.7z`](http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z) (zipped 108 MB, unzipped: about 951 MB).
-2.  unzip it to a dir, let's see `c:\vs2015x64`, so the `<build dir>` is `c:\vs2015x64\qt-4.8.7`
-3.  add `<build dir>\bin` to %PATH%
-4.  use cmake to build vs2015 project, then vs2015 to build & run, that's it.
+some builds are small (like the 14 MB `vs2015-qt4-playground.zip` demo build), some builds are big, like the following ones.
 
 ## build #1
 
@@ -67,3 +57,10 @@ some builds are small, some builds are big.
 **build**
 
 <http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z> (108 MB).
+
+## how to use these builds
+
+1.  download a build, let's see [`qt-4.8.7-vs2015-build1.7z`](http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z) (zipped 108 MB, unzipped: about 951 MB).
+2.  unzip it to a dir, let's see `c:\vs2015x64`, so the `<build dir>` is `c:\vs2015x64\qt-4.8.7`
+3.  add `<build dir>\bin` to %PATH%
+4.  use cmake to build vs2015 project, then vs2015 to build & run, that's it.
