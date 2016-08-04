@@ -33,6 +33,8 @@ cd qt-build-4.8.7
 nmake
 ```
 
+**remember to copy `src\corelib\global\qconfig.h` to `include\QtCore\qconfig.h`.**
+
 For details, check out sandym's [qt-patches/windows/qt-4.8.7 at master · sandym/qt-patches](https://github.com/sandym/qt-patches/tree/master/windows/qt-4.8.7).
 
 # credits
