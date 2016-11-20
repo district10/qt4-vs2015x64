@@ -60,7 +60,22 @@ some builds are small (like the 14 MB `vs2015-qt4-playground.zip` demo build), s
 
 <http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z> (108 MB).
 
-## how to use these builds
+## build #2
+
+(just a static version)
+
+**configure**
+
+```
+..\qt-src-4.8.7\configure.exe -prefix C:\Qt\VS2015x64\qt-4.8.7 -opensource -confirm-license -developer-build -debug-and-release -static -nomake doc -nomake examples -nomake demos -platform win32-msvc2015 -no-qt3support -no-phonon -no-phonon-backend -no-dbus -no-nis -qt-libpng -qt-libjpeg -qt-libmng -no-openssl
+```
+
+**build**
+
+-   Debug+Release: <http://whudoc.qiniudn.com/2016/qt-4.8.7-static.7z> (86 MB)
+-   Release only: <http://whudoc.qiniudn.com/2016/qt-4.8.7-static-release-only.7z> (34 MB)
+
+# how to use these builds
 
 1.  download a build, let's see [`qt-4.8.7-vs2015-build1.7z`](http://whudoc.qiniudn.com/2016/qt-4.8.7-vs2015-build1.7z) (zipped 108 MB, unzipped: about 951 MB).
 2.  unzip it to a dir, let's see `c:\vs2015x64`, so the `<build dir>` is `c:\vs2015x64\qt-4.8.7`
